@@ -1,0 +1,28 @@
+{
+  "name": "neuron-reverse-router",
+  "version": "1.0.0",
+  "description": "neuron-reverse-router",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --reporter spec ./test/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/neuron-js/neuron-reverse-router.git"
+  },
+  "keywords": [
+    "neuron-reverse-router"
+  ],
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "author": "neuron-js",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/neuron-js/neuron-reverse-router/issues"
+  },
+  "devDependencies": {
+    "mocha": "*",
+    "chai": "*"
+  }
+}

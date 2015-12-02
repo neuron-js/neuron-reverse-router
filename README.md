@@ -11,7 +11,7 @@
 
 # neuron-reverse-router
 
-<!-- description -->
+Reverse router to map a local filename to a url path according to router configurations of [neuron-dev-server](https://github.com/neuron-js/neuron-dev-server).
 
 ## Install
 
@@ -21,8 +21,25 @@ $ npm install neuron-reverse-router --save
 
 ## Usage
 
+routers:
+
 ```js
-var neuron_reverse_router = require('neuron-reverse-router');
+[
+  {
+    location: '/mod',
+    root: '/home/my/.static_modules/'
+  },
+  {
+    location: '/old',
+    root: '/data/public'
+  }
+]
+```
+
+```js
+var rr = require('neuron-reverse-router');
+
+rr.route('/data/public/a.js', routers); // '/old/a.js'
 ```
 
 ## License

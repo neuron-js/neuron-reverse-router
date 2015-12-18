@@ -1,6 +1,6 @@
 {
   "name": "neuron-reverse-router",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "neuron-reverse-router",
   "main": "index.js",
   "scripts": {
@@ -27,6 +27,7 @@
     "run-mocha-cases": "^1.0.6"
   },
   "dependencies": {
-    "make-array": "^0.1.2"
+    "make-array": "^0.1.2",
+    "neuron-router": "^1.2.0"
   }
 }

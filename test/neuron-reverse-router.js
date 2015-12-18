@@ -26,6 +26,16 @@ var routers = [
   },
   {
     root: '/another/invalid'
+  },
+  {
+    location: '/array',
+    root: ['/data/array', '/data/array2']
+  },
+
+  {
+    location: '/with_location',
+    root: '/with',
+    with_location: true
   }
 ];
 
@@ -72,5 +82,23 @@ run().description('router.route').runner(function (file) {
     },
     a: '/data/new-public/a.js',
     e: null
+  },
+
+  {
+    d: '1.1.0: multi roots, first met',
+    a: '/data/array/a.js',
+    e: '/array/a.js'
+  },
+
+  {
+    d: '1.1.0: multi roots, second met',
+    a: '/data/array2/a.js',
+    e: '/array/a.js'
+  },
+
+  {
+    d: '1.1.0: with_location, found',
+    a: '/with/with_location/a.js',
+    e: '/with_location/a.js'
   }
 ]);

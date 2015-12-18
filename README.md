@@ -29,9 +29,16 @@ routers:
     location: '/mod',
     root: '/home/my/.static_modules/'
   },
+  
   {
     location: '/old',
-    root: '/data/public'
+    root: ['/data/public']
+  },
+  
+  {
+    location: '/new',
+    root: ['/data'],
+    with_location: true
   }
 ]
 ```

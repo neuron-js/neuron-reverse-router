@@ -14,6 +14,8 @@ exports.route = function (file, routers) {
       return;
     }
 
+    var roots = 
+
     if (!~file.indexOf(router.root)) {
       return;
     }

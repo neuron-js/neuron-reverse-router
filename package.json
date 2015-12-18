@@ -25,5 +25,8 @@
     "chai": "*",
     "mocha": "*",
     "run-mocha-cases": "^1.0.6"
+  },
+  "dependencies": {
+    "make-array": "^0.1.2"
   }
 }

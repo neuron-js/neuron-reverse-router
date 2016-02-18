@@ -1,7 +1,7 @@
 {
   "name": "neuron-reverse-router",
-  "version": "1.1.0",
-  "description": "neuron-reverse-router",
+  "version": "1.1.1",
+  "description": "The opposite module of neuron-router to map a local file to a pathname",
   "main": "index.js",
   "scripts": {
     "test": "mocha --reporter spec ./test/*.js"
@@ -11,7 +11,9 @@
     "url": "git://github.com/neuron-js/neuron-reverse-router.git"
   },
   "keywords": [
-    "neuron-reverse-router"
+    "neuron-reverse-router",
+    "reverse",
+    "router"
   ],
   "engines": {
     "node": ">=0.10.0"
@@ -28,6 +30,6 @@
   },
   "dependencies": {
     "make-array": "^0.1.2",
-    "neuron-router": "^1.2.0"
+    "neuron-router": "^2.0.0"
   }
 }
